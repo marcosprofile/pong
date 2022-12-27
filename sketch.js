@@ -1,6 +1,6 @@
 //variáveis da bolinha
-let eixoXBolinha = 400;
-let eixoYBolinha = 250;
+let eixoXBolinha = 300;
+let eixoYBolinha = 200;
 let diametro = 20;
 let raio = diametro / 2;
 
@@ -40,7 +40,7 @@ function setup() {
 function draw() {
   background(0);
   mostraBolinha();
-  movimentaBolinha();
+  //movimentaBolinha();
   verificaColisaoBorda();
   bolinhaNaoFicaPresa();
   mostraRaquete(xRaquete, yRaquete);
@@ -49,7 +49,7 @@ function draw() {
   //player2();
   verificaColisaoRaquete(xRaquete, yRaquete);
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
-  movimentaRaqueteOponente();
+  //movimentaRaqueteOponente();
   incluirPlacar();
   marcaPonto();
   preload();
@@ -142,9 +142,9 @@ function incluirPlacar() {
   fill(255);
   text(meusPontos, 150, 26);
   fill(255, 140, 0);
-  rect(530, 7, 40, 24);
+  rect(430, 7, 40, 24);
   fill(255);
-  text(oponentePontos, 550, 26)
+  text(oponentePontos, 450, 26)
 }
 
 function marcaPonto() {
