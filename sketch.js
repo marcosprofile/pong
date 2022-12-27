@@ -40,7 +40,7 @@ function setup() {
 function draw() {
   background(0);
   mostraBolinha();
-  //movimentaBolinha();
+  movimentaBolinha();
   verificaColisaoBorda();
   bolinhaNaoFicaPresa();
   mostraRaquete(xRaquete, yRaquete);
@@ -49,7 +49,7 @@ function draw() {
   //player2();
   verificaColisaoRaquete(xRaquete, yRaquete);
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
-  //movimentaRaqueteOponente();
+  movimentaRaqueteOponente();
   incluirPlacar();
   marcaPonto();
   preload();
